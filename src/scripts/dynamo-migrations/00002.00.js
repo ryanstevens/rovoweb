@@ -15,20 +15,26 @@ module.exports = async function() {
   const Business = dynamo_utils.getModel('Business');
   const User = dynamo_utils.getModel('User');
 
-  const bizModels = await Promise.all(bizes.map(async function(item) {
-    const biz = new Business(Object.assign({ biz_uuid: node_uuid.v4()}, item));
-    const bizSave = util.promisify(biz.save.bind(biz));
-    await bizSave(); 
-    return biz;
-  }))
   
-
   const userModels = await Promise.all(users.map(async function(item) {
     let user = new User(Object.assign({user_uuid: node_uuid.v4()}, item));
     let userSaver = util.promisify(user.save.bind(user));
     await userSaver();
     return user;
   }))
+
+
+  const bizModels = await Promise.all(bizes.map(async function(item) {
+
+    const userToAdd = Array.apply(null, Array(item.user_count)).map(u => draw(users));
+
+    const biz = new Business(Object.assign({ biz_uuid: node_uuid.v4(), social: userToAdd}, item));
+    const bizSave = util.promisify(biz.save.bind(biz));
+    await bizSave(); 
+    return biz;
+  }))
+  
+
 
   var items = Array.apply(null, Array(30));
   items = items.map(item => draw(experiences));
@@ -52,6 +58,23 @@ module.exports = async function() {
 const bizes = [
   {
     name: 'Dance Dance Rev',
+    address: '235 Mission St, San Francisco, CA 94107',
+    claimed: false,
+    user_count: 15,
+    image: 'http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png'
+  },
+  {
+    name: 'Full Out Studio',
+    address: '530 Kansas St, Oakland, CA 94107',
+    claimed: false,
+    user_count: 50,
+    image: 'http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png'
+  },
+  {
+    name: 'Millennium Dance Complex',
+    address: '2433 La Palma Ave, Anahiem, CA 94107',
+    claimed: true,
+    user_count: 92,
     image: 'http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png'
   }
 ]

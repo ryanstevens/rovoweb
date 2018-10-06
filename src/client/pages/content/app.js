@@ -7,6 +7,32 @@ import Nav from '../nav'
 import {Grid, Row, Col, Thumbnail, Button, Form, FormControl, FormGroup} from 'react-bootstrap'
 
 
+class Recommenders extends React.Component {
+  
+  
+	componentDidMount() {
+		axios.get('/four-listings').then(results => {
+			this.setState({
+        arr: Array.prototype.slice.call(results.data)
+      });
+		});
+  }
+
+  render() {
+    if (!this.state || !this.state.arr) return <span />
+
+    const recs = this.state.arr.map(rec => {
+      return <Col xs={6} md={3}><img class="recImg" src={rec.fileLocation} /></Col>
+    })
+    console.log("####", recs)
+    return (	<Grid>
+      <Row>
+        {recs}
+      </Row>
+    </Grid>)
+  }
+}
+
 class Container extends React.Component {
 
   constructor(props) {
@@ -54,6 +80,7 @@ class Container extends React.Component {
 					<h3>{ this.state.data.title }</h3>
 					<p>Description/hashtag</p>
 				</Thumbnail>
+        <Recommenders />
       </div>
     )
   }

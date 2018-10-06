@@ -2,6 +2,14 @@
 const path = require('path');
 const dynamo_utils = require('dynamo-utils');
 
+
+function draw(arr) {
+  const mod = arr.length;
+  const item = arr[Math.round((Math.random() * 10000)) % mod];
+  return item;
+}
+
+
 module.exports = function setupRoute(boringApp) {
 
   const {
@@ -64,6 +72,22 @@ module.exports = function setupRoute(boringApp) {
       
       `);
     } 
+
+
+    @get('/four-listings')
+    fourListing(req, res) {
+      
+      const Content = dynamo_utils.getModel('Content');
+      Content.scan({}, function(err, results) {
+        if (err || results.length === 0) return res.send(err);
+        res.json([
+          draw(results),
+          draw(results),
+          draw(results),
+          draw(results)
+        ])
+      });
+    }
   
     @get('/listings')
     listing(req, res) {

@@ -27,6 +27,10 @@ class Container extends React.Component {
       return <div>loading</div>
     }
 
+    let facepile = this.state.social.map(face => {
+      return <img class='resize' src={face.thumb}></img>
+    });
+
     return (
     <div>
       	<div>
@@ -45,7 +49,9 @@ class Container extends React.Component {
 					<Col xs={6} md={3} xsOffset={2}>
 					</Col>
 				</Row>
-					<h3>{this.state.name}</h3>
+			
+        	<h3>{this.state.name}</h3>
+        {facepile}
 			</Grid>
 		</div>
 
