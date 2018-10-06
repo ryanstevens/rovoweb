@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './index.css';
 import axios from 'axios'
 import Nav from '../nav'
+import Recommenders from '../recs'
 
 
 import { FormGroup, FormControl, Form, Button, Col, Row, Grid, Thumbnail, Image, ButtonGroup, Badge} from 'react-bootstrap'
@@ -80,9 +81,9 @@ class Container extends React.Component {
                 </Row>
               </Col>
             </Row>
-            <Row>
-              <Col xs={12} className="face-row">
-              
+            <Row className='rec-row'> 
+              <Col xs={12}>
+              <Recommenders />
               </Col>
 
             </Row>

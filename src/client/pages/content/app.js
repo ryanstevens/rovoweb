@@ -3,35 +3,36 @@ import PropTypes from 'prop-types';
 import './index.css';
 import axios from 'axios'
 import Nav from '../nav'
+import Recommenders from '../recs'
 
 import {Grid, Row, Col, Thumbnail, Button, Form, FormControl, FormGroup} from 'react-bootstrap'
 
 
-class Recommenders extends React.Component {
+// class Recommenders extends React.Component {
   
   
-	componentDidMount() {
-		axios.get('/four-listings').then(results => {
-			this.setState({
-        arr: Array.prototype.slice.call(results.data)
-      });
-		});
-  }
+// 	componentDidMount() {
+// 		axios.get('/four-listings').then(results => {
+// 			this.setState({
+//         arr: Array.prototype.slice.call(results.data)
+//       });
+// 		});
+//   }
 
-  render() {
-    if (!this.state || !this.state.arr) return <span />
+//   render() {
+//     if (!this.state || !this.state.arr) return <span />
 
-    const recs = this.state.arr.map(rec => {
-      return <Col xs={6} md={3}><img class="recImg" src={rec.fileLocation} /></Col>
-    })
-    console.log("####", recs)
-    return (	<Grid>
-      <Row>
-        {recs}
-      </Row>
-    </Grid>)
-  }
-}
+//     const recs = this.state.arr.map(rec => {
+//       return <Col xs={6} md={3}><img class="recImg" src={rec.fileLocation} /></Col>
+//     })
+//     console.log("####", recs)
+//     return (	<Grid>
+//       <Row>
+//         {recs}
+//       </Row>
+//     </Grid>)
+//   }
+// }
 
 class Container extends React.Component {
 
