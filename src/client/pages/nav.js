@@ -29,7 +29,7 @@ class NavComponent extends React.Component {
     if ('loggedIn' in (this.state || {})) {
       LogInButton = <Button className="buttonStyle navbar-btn" onClick={(() => window.location.href='/login/auth')}>Login</Button>
       if (this.state && this.state.thumb) {
-        LogInButton = <Navbar.Text pullRight>{this.state.name}</Navbar.Text>
+        LogInButton = <img class="profileImg" src={this.state.thumb}></img>
       }
     
 
