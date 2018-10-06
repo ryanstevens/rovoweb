@@ -34,15 +34,16 @@ class NavComponent extends React.Component {
       }
     
 
-      addButton = <Button className="buttonStyle navbar-btn" onClick={this.openAdd}>Add+ Experience</Button>;
-      if (window.location.pathname.indexOf('share')>0) addButton = <span />
+      // addButton = <Button className="buttonStyle navbar-btn" onClick={this.openAdd}>Add+ Experience</Button>;
+      // if (window.location.pathname.indexOf('share')>0) addButton = <span />
     }
 
     return (
       <Navbar>
         <Navbar.Header pullLeft>
           <Navbar.Brand>
-            <a href="/"><img src={Logo}></img></a>
+            <div>
+            <a class="logo-link" href="/"><img src={Logo}></img></a></div>
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
