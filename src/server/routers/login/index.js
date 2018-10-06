@@ -1,10 +1,9 @@
-
-const path = require('path');
-const Layout = require('../../lib/layout')
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import dyanmo_utils from 'dynamo-utils';
 import uuid from 'node-uuid';
+const path = require('path');
+const Layout = require('../../lib/layout')
 
 const passport = require('passport');
 const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn('/login/auth');
@@ -91,7 +90,10 @@ module.exports = function setupRoute({paths, decorators} = boringApp) {
       }
       res.getUser().then(expanded_user => {
         res.json(Object.assign({loggedIn: true}, expanded_user));
-      });
+      }).catch((e) => {
+		console.log("######", e);
+		return res.json({loggedIn: false});
+	  })
       
     }
 
