@@ -23,6 +23,14 @@ class NavComponent extends React.Component {
     
     const { classes } = this.props;
 
+    let LogInButton = <Button pullRight className="buttonStyle navbar-btn" onClick={(() => window.location.href='/login/auth')}>Login</Button>
+    if (this.state && this.state.thumb) {
+      LogInButton = <div>{this.state.name}</div>
+    }
+
+    let addButton =  <Button pullRight className="buttonStyle navbar-btn" onClick={this.openAdd}>Add+ Experience</Button>;
+    if (window.location.pathname.indexOf('share')>0) addButton = <span />
+
     return (
       <Navbar>
         <Navbar.Header pullLeft>
@@ -37,8 +45,8 @@ class NavComponent extends React.Component {
             </FormGroup>
           </Navbar.Form>
           <Nav pullRight>
-            <Button pullRight className="buttonStyle navbar-btn" onClick={this.openAdd}>Add+ Experience</Button>
-            <Button pullRight className="buttonStyle navbar-btn" onClick={(() => window.location.href='/login/auth')}>Login</Button>
+            {addButton}
+            {LogInButton}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
