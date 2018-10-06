@@ -1,0 +1,12 @@
+{
+	"business":"pageId",
+	"assets": "images",
+	"social": 
+		{
+			"follows": "42",
+			"followers":
+				{
+					"userIcons": "user1, user2"
+				}
+		}
+}
