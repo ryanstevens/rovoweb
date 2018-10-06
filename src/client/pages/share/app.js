@@ -17,7 +17,16 @@ class Container extends React.Component {
 		  url: '',
 	  }
 	  this.updateCaption = this.updateCaption.bind(this);
+	  this.updateLocation = this.updateLocation.bind(this);
+	  this.updateHashtag = this.updateHashtag.bind(this);
+	  this.updateURL = this.updateURL.bind(this);
+	  this.handleSubmit = this.handleSubmit.bind(this);
   }
+	handleSubmit(e) {
+		e.preventDefault();
+		const formData = JSON.stringify(this.state);
+	}
+
 	updateURL(e) {
 		this.setState({url: e.target.value});
 	}
