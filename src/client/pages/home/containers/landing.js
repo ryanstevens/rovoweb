@@ -29,7 +29,7 @@ class UGC extends Component {
 		if (this.state && this.state.data) items = this.state.data;
 
 		const arr =  items.filter(item => (i++ % 3 === column)).map(item => {
-			let asset = <Image src={item.fileLocation} alt="placeholder" onClick={this.clickPic.bind(this, item)} />
+			let asset = <Image className="resize" src={item.fileLocation} alt="placeholder" onClick={this.clickPic.bind(this, item)} />
 			return (
 				<div>
 				{asset}
