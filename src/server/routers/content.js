@@ -23,9 +23,16 @@ module.exports = function setupRoute(boringApp) {
     contentGet(req, res) {
 
       const Content = dynamo_utils.getModel('Content');
+      const User = dynamo_utils.getModel('User');
+
       Content.scan({content_uuid: req.params.uuid}, function(err, results) {
         if (err || results.length === 0) return res.send(err);
-        res.json(results[0])
+        let content = results[0];
+        User.scan({user_uuid: content.user_uuid}, function(err, users) {
+          let user = users[0];
+          content.user = user
+          res.json(content);
+        });
       });
     }
 

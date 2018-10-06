@@ -47,7 +47,7 @@ class Home extends React.Component {
               </FormGroup>
             </Navbar.Form>
             <Nav pullRight>
-              <Button pullRight className="buttonStyle navbar-btn" onClick={this.openAdd}>Share Experience</Button>
+              <Button pullRight className="buttonStyle navbar-btn" onClick={this.openAdd}>Add+ Experience</Button>
               <Button pullRight className="buttonStyle navbar-btn">Login</Button>
             </Nav>
           </Navbar.Collapse>

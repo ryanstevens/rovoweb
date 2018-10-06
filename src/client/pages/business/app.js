@@ -41,7 +41,7 @@ class Container extends React.Component {
 					</FormGroup>
 				</Navbar.Form>
 				<Nav pullRight>
-					<Button pullRight className="buttonStyle navbar-btn">Share Experience</Button>
+					<Button pullRight className="buttonStyle navbar-btn">Add+ Experience</Button>
 					<Button pullRight className="buttonStyle navbar-btn">Login</Button>
 			</Nav>
 		</Navbar.Collapse>

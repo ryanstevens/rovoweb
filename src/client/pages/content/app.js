@@ -54,7 +54,7 @@ class Container extends React.Component {
 						</FormGroup>
 					</Navbar.Form>
 					<Nav pullRight>
-						<Button pullRight className="buttonStyle navbar-btn">Share Experience</Button>
+						<Button pullRight className="buttonStyle navbar-btn">Add+ Experience</Button>
 						<Button pullRight className="buttonStyle navbar-btn">Login</Button>
 					</Nav>
 				</Navbar.Collapse>
@@ -65,7 +65,8 @@ class Container extends React.Component {
 			<Button bsStyle="primary" onClick={this.loadBusiness.bind(this, this.state.data)}>Business Page</Button>
 		</div>
          <Thumbnail src={this.state.data.fileLocation} alt="placeholder">
-					<h3>Title of picture</h3>
+         <Thumbnail src={this.state.data.user.thumb} alt="placeholder" class="round"></Thumbnail>
+					<h3>{ this.state.data.title }</h3>
 					<p>Description/hashtag</p>
 				</Thumbnail>
       </div>

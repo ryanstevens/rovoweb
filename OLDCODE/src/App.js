@@ -24,7 +24,7 @@ class App extends Component {
               </FormGroup>
        	  </Navbar.Form>
 	   	  <Nav pullRight>
-	   	   <Button pullRight className="buttonStyle navbar-btn">Share Experiences</Button>
+	   	   <Button pullRight className="buttonStyle navbar-btn">Add+ Experiences</Button>
 	       <Button pullRight className="buttonStyle navbar-btn">Login</Button>
 	   	  </Nav>
          </Navbar.Collapse>

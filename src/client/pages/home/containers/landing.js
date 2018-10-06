@@ -45,6 +45,8 @@ class UGC extends Component {
 	//we'll have a function here for rendering search content
 	//Called when this class is being created elsewhere
 	render() {
+
+
 		return (
 		<div>
 			<Grid>
