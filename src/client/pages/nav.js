@@ -23,13 +23,18 @@ class NavComponent extends React.Component {
     
     const { classes } = this.props;
 
-    let LogInButton = <Button pullRight className="buttonStyle navbar-btn" onClick={(() => window.location.href='/login/auth')}>Login</Button>
-    if (this.state && this.state.thumb) {
-      LogInButton = <div>{this.state.name}</div>
-    }
+    let LogInButton = '';
+    let addButton =  '';
 
-    let addButton =  <Button pullRight className="buttonStyle navbar-btn" onClick={this.openAdd}>Add+ Experience</Button>;
-    if (window.location.pathname.indexOf('share')>0) addButton = <span />
+    if ('loggedIn' in (this.state || {})) {
+      LogInButton = <Button pullRight className="buttonStyle navbar-btn" onClick={(() => window.location.href='/login/auth')}>Login</Button>
+      if (this.state && this.state.thumb) {
+        LogInButton = <div>{this.state.name}</div>
+      }
+
+      addButton = <Button pullRight className="buttonStyle navbar-btn" onClick={this.openAdd}>Add+ Experience</Button>;
+      if (window.location.pathname.indexOf('share')>0) addButton = <span />
+    }
 
     return (
       <Navbar>

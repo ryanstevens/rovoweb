@@ -85,10 +85,10 @@ module.exports = function setupRoute({paths, decorators} = boringApp) {
     user(req, res) {
 
       if (!res.getUser) {
-        return res.json({})
+        return res.json({ loggedIn: false })
       }
       res.getUser().then(expanded_user => {
-        res.json(expanded_user);
+        res.json(Object.assign({loggedIn: true}, expanded_user));
       });
       
     }
