@@ -53,6 +53,26 @@ module.exports = async function() {
 
 }
 
+/*
+Rodney's choreo was awesome!	#country #linedancing #dariusrucker
+Gettin' hyphy with e-40	#country #twostepping #jonpardi
+Breakin a sweat with this choreo	#countrywestern #bestshot #jimmyallen
+So much fun!	#twostepping #flips #dips
+Finally dancing again after tweaking my back a little	#aerials #swing #twostepping
+This was FAST but so much fun!!	#thomasrhett #countrymusic #linedancing
+Learned my first hip-hop routine. Woo!	#countrygirl #lukebryan #linedance
+One of the classes at the studio	#lonelydrum #aarongoodvin #countrydance
+Great job everyone! Love you all!!!	#e40 #hyphy #hiphop
+Class was lit!	#bayarea #hipop #warriors
+Fun times with Lo	#bigbank #yg #hiphop
+Amazing class with amazing people	#levelup #dancechallenge #ciara
+NAILED IT!!!	#heelsclass #hiphop #levelup 
+Tonight was freaking awesome	#inmyfeelings #drake #hiphop
+Always a blast with this crew	#2am #sagethegemini #masterclass
+This was my favorite!!!	#masterclass #hiphop #yg
+Props to everyone in my class tonight. Thank you!	#bigbank #masterclass #hiphop
+*/
+
 const bizes = [
   {
     name: 'Dance Dance Rev',

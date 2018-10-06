@@ -1,5 +1,16 @@
 
-img.resize {
-  width:80px; /* you can use % */
-  height: auto;
+.fileSize {
+  width:60px; /* you can use % */
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: -40px;
+}
+
+.clear {
+  clear: after;
+}
+
+.face-row {
+  margin-top: 20px
 }

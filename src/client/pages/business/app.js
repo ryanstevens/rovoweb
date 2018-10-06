@@ -28,66 +28,65 @@ class Container extends React.Component {
     }
 
     let facepile = this.state.social.map(face => {
-      return <img className='resize' src={face.thumb}></img>
+      return <img class='fileSize' src={face.thumb}></img>
     });
 
+    var i=0;
+    facepile = facepile.filter(face => i++ < 5);
+
     return (
-    <div>
+      <div>
       	<div>
-        <Nav />
-	    </div>
-		<div>
-		<Button bsStyle="primary" onClick={(() => window.location.href = '/')}>Home Page</Button>
-    	</div>
-		
-		<div class="media">
-			<div class="media-left">
-				<img class="media-object" src={this.state.image} alt="pew"/>
-			</div>
-			<div class="media-body">
-				<h2>Dance studio name</h2>
-			</div>
-		</div>
+          <Nav />
+	      </div>
+        <div>
+          <Grid>
+            <Row>
+              <Col xs={6} md={3}>
+                <img src={this.state.image} />
+              </Col>
+              <Col xs={6} md={3} xsOffset={4}>
+                <Row>
+                  <Col xs={12}>
+                    <h3>{this.state.name}</h3>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col xs={6} md={3}>
+                  </Col>
+                  <h4>October 31, 2018</h4>
+                </Row>
+                <Row>
+                  <Col xs={6} md={3}>
+                    <p>Followers</p>
+                  </Col>
+                  <Col xs={6} md={3}>
+                    <Badge>42</Badge>
+                  </Col>
+                  {/* <Col xs={6} md={3}>
+                    <Button>Follow</Button>
+                  </Col> */}
+                </Row>
+                <Row xs={20}>
 
-		<div>
-			<Grid>
-				<Row>
-					<Col xs={6} md={3}>
-						<img src={this.state.image} rounded />
-					</Col>
-					<Col xs={6} md={3} xsOffset={4}>
-						<Row>
-							<Col xs={6} md={3}>
-								<Thumbnail href="" alt="20x20" src={this.state.image} />
-							</Col>
-							<Col xs={6} md={3}>
-								<h4>Millenial Dance Complex</h4>
-							</Col>
-						</Row>
-						<Row>
-							<Col xs={6} md={3}>
-								<h3>#hashtag1 #hashtag2 #hashtag3</h3>
-							</Col>
-							<h4>October 31, 2018</h4>
-						</Row>
-						<Row>
-							<Col xs={6} md={3}>
-								<p>Followers</p>
-							</Col>
-							<Col xs={6} md={3}>
-								<Badge>42</Badge>
-							</Col>
-							<Col xs={6} md={3}>
-								<Button>Follow</Button>
-							</Col>
+                  <Col xs={12}>
+                    <div class="face-container">
+                        {facepile}
 
 
-						</Row>
-					</Col>
-				</Row>
-			
-        	<h3>{this.state.name}</h3>
-        {facepile}
+                      <div class="clear"></div>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} className="face-row">
+              
+              </Col>
+
+            </Row>
+        	
 			</Grid>
 		</div>
 
