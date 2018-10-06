@@ -222,7 +222,8 @@ const hashtags = [
 	"#hipop",
 	"#warriors",
 	"#bigbank",
-	"#yg #hiphop",
+	"#yg".
+	"#hiphop",
 	"#levelup",
 	"#dancechallenge",
 	"#ciara",
