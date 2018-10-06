@@ -50,9 +50,11 @@ class Container extends React.Component {
 					<Col xs={6} md={3}>
 						<img src="http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png" rounded />
 					</Col>
-					<Image src="http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png" rounded />
-					<h3>test123</h3>
+					<Col xs={6} md={3} xsOffset={2}>
+					<Image src="http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png" circle/>
+					</Col>
 				</Row>
+					<h3>test123</h3>
 			</Grid>
 		</div>
 
