@@ -46,7 +46,7 @@ class UGC extends Component {
 			return (
 				<div style={{"backgroundImage":url, backgroundPosition: 'center ' +(backgroundTop) + 'px',width: '100%', height: height + 'px', marginTop:'20px', cursor:'pointer'}} onClick={this.clickPic.bind(this, item)}>
 				{/* <Image className="resize" src={item.fileLocation} alt="placeholder" onClick={this.clickPic.bind(this, item)} rounded={true} /> */}
-				<p className="imgHash">#{item.hashtags[0]}</p>
+				<p className="imgHash">{item.hashtags[0]}</p>
 				</div>
 			)
 		});
