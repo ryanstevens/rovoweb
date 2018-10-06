@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './landing.css'
+// import './landing.css'
 import {Grid, Row, Col, Thumbnail, Button} from 'react-bootstrap'
 
 class UGC extends Component {
