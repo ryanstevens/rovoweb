@@ -42,7 +42,7 @@ module.exports = function setupRoute(boringApp) {
 
     
     @get('/')
-    @entrypoint(path.normalize(paths.app_dir + '/client/pages/home/containers/home.js'))
+    @entrypoint(path.normalize(paths.app_dir + '/client/pages/home/entrypoint.js'))
     serveHomePage(req, res) {
       
 

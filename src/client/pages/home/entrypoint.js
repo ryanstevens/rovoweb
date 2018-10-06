@@ -4,7 +4,7 @@ import Home from './containers/home'
 
 ReactDOM.render(
   <Home />,
-  document.querySelector('#react'),
+  document.querySelector('#react')
 );
 
 
