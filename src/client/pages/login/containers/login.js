@@ -6,32 +6,25 @@ import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 import axios from 'axios'
 import { Field, reduxForm } from 'redux-form'
-
-
-
-const styles = theme => ({
+ const styles = theme => ({
   loginbox: {
     height: '100px',
     width: '100%'
   }
 });
-
-const mapStateToProps = state => {
+ const mapStateToProps = state => {
   return { 
     name: state.login.name, 
     password: state.login.password
   };
 };
-
-var count = 0;  
+ var count = 0;  
 const mapDispatchToProps = dispatch => {
   return {
     tryLogin: info => {
       console.log("DISPATCHING", info);
-
-      // setTimeout(function() {
-
-      //   dispatch({
+       // setTimeout(function() {
+       //   dispatch({
       //     type: 'change_name',
       //     name: info.name + (count++)
       //   });
@@ -39,10 +32,8 @@ const mapDispatchToProps = dispatch => {
     }
   };
 };
-
-class ContactForm extends React.Component {
-
-  render() {
+ class ContactForm extends React.Component {
+   render() {
     const { handleSubmit, pristine, reset, submitting } = this.props;
     return (
       <form onSubmit={handleSubmit} noValidate={true}>
@@ -62,45 +53,35 @@ class ContactForm extends React.Component {
     )
   }
 }
-
-ContactForm = reduxForm({
+ ContactForm = reduxForm({
   // a unique name for the form
   form: 'login'
 })(ContactForm)
-
-ContactForm = connect(
+ ContactForm = connect(
   state => ({
     initialValues: state.login // pull initial values from account reducer
   })
 )(ContactForm)
-
-class Login extends React.Component {
-
-  constructor(props) {
+ class Login extends React.Component {
+   constructor(props) {
     super(props);
     this.login = this.login.bind(this);
   }
-
-  render() {
+   render() {
     
     const { classes } = this.props;
-
-    return (
+     return (
       <Grid xs={12} item className={classes.loginbox} container alignItems="center" justify="center" direction="column">
         <ContactForm onSubmit={this.login}>
-
-        </ContactForm>
+         </ContactForm>
       </Grid>
     )
   }
-
-  login(values) {
+   login(values) {
     this.props.tryLogin(values);
   }
 }
-
-Login.propTypes = {
+ Login.propTypes = {
   classes: PropTypes.object.isRequired,
 };
-
-export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)(Login));
+ export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)(Login)); 
