@@ -12,7 +12,7 @@ class Container extends React.Component {
 	this.loadPage = this.loadPage.bind(this);
   }
 	loadPage() {
-		window.open('/#');
+		window.location.href = '/';
 	}
 
   
@@ -24,7 +24,7 @@ class Container extends React.Component {
 		});
   }
 	loadPage() {
-		window.open('/#');
+		window.location.href = '/';
 	}
 
   render() {

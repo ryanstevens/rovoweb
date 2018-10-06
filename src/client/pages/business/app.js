@@ -11,7 +11,7 @@ class Container extends React.Component {
 	  this.loadPage = this.loadPage.bind(this);
   }
 	loadPage() {
-		window.open('/#');
+		window.location.href = '/';
 	}
   render() {
     

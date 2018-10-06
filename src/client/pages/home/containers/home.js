@@ -22,10 +22,10 @@ class Home extends React.Component {
 		});
 	}
 	loadPage() {
-		window.open('/business');
+		window.location.href = '/business';
 	}
 	openAdd() {
-		window.open('/share');
+		window.location.href = '/share';
 	}
   render() {
     
