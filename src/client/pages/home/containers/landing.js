@@ -47,7 +47,12 @@ class UGC extends Component {
 						{ this.renderColumn()	}
 						
 					</Col>
-				
+					<Col xs = {6} md={4}>
+						{ this.renderColumn() }
+					</Col>
+					<Col xs = {6} md={4}>
+						{this.renderColumn() }
+					</Col>
 				</Row>
 			</Grid>;
 		</div>

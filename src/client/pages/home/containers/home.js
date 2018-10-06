@@ -2,6 +2,7 @@ import React from 'react';
 import Landing from './landing'
 import PropTypes from 'prop-types';
 import './landing.css';
+import Container from './Business'
 
 import {Navbar, Nav, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
 
@@ -9,7 +10,16 @@ class Home extends React.Component {
 
   constructor(props) {
     super(props);
+	  this.state = {
+		  showComponent: false,
+	  };
+	  this.renderComponent = this.renderComponent.bind(this);
   }
+	renderComponent() {
+		this.setState({
+			showComponent: true,
+		});
+	}
 
   render() {
     
@@ -37,9 +47,12 @@ class Home extends React.Component {
           </Navbar.Collapse>
         </Navbar>
       </div>
-      <div>
+	<div>
         <Landing />
-		  </div>
+	</div>
+	<div>
+		<Button bsStyle="primary" onClick={this.renderComponent}>Business Page</Button>
+	</div>
     </div>
     )
   }
