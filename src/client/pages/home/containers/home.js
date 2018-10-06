@@ -1,6 +1,8 @@
 import React from 'react';
 import Landing from './landing'
 import PropTypes from 'prop-types';
+import './landing.css';
+
 import {Navbar, Nav, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
 
 const styles = theme => ({
