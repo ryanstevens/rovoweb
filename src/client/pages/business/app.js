@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './index.css';
+import axios from 'axios'
 
 import {Navbar, Nav, FormGroup, FormControl, Form, Button, Col, Row, Grid, Thumbnail, Image } from 'react-bootstrap'
 
@@ -8,12 +9,16 @@ class Container extends React.Component {
 
   constructor(props) {
     super(props);
-	  this.loadPage = this.loadPage.bind(this);
   }
-	loadPage() {
-		window.location.href = '/';
 
-	}
+	componentDidMount() {
+		axios.get('/business-get/' + window.location.pathname.split('/')[2]).then(results => {
+			this.setState({
+				data: results.data
+			});
+		});
+  }
+
   render() {
     
     const { classes } = this.props;
@@ -24,7 +29,7 @@ class Container extends React.Component {
 			<Navbar>
 				<Navbar.Header pullLeft>
 					<Navbar.Brand>
-						<a href="#">ROVO</a>
+						<a href="/">ROVO</a>
 					</Navbar.Brand>
 				</Navbar.Header>
 			<Navbar.Collapse>
@@ -41,7 +46,7 @@ class Container extends React.Component {
 		</Navbar>
 	</div>
 		<div>
-		<Button bsStyle="primary" onClick={this.loadPage}>Home Page</Button>
+		<Button bsStyle="primary" onClick={(() => window.location.href = '/')}>Home Page</Button>
     	</div>
 		
 		<div>

@@ -6,6 +6,18 @@ const util = require('util');
 module.exports = async function() {
 
   const Content = dynamo_utils.getModel('Content');
+  const Business = dynamo_utils.getModel('Business');
+  const User = dynamo_utils.getModel('User');
+
+  const biz1 = new Business({
+    biz_uuid: node_uuid.v4(),
+    name: 'Dance Dance Rev',
+    image: 'http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png'
+
+  })
+
+  const bizSave = util.promisify(biz1.save.bind(biz1));
+  await bizSave();
 
   var i= 0;
   for (; i<items.length; i++) {
