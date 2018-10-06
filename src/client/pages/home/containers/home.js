@@ -28,15 +28,12 @@ class Home extends React.Component {
 
     return (
     <div>
-		<div>
-			<NavComponent />
-		</div>
-		<div className="landingDiv">
-        	<Landing />
-		</div>
-		<div>
-			<Button bsStyle="primary" onClick={this.loadPage}>Business Page</Button>
-		</div>
+      <div>
+        <NavComponent />
+      </div>
+      <div className="landingDiv">
+            <Landing />
+      </div>
     </div>
     )
   }

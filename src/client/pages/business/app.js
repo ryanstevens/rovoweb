@@ -28,7 +28,7 @@ class Container extends React.Component {
     }
 
     let facepile = this.state.social.map(face => {
-      return <img class='resize' src={face.thumb}></img>
+      return <img className='resize' src={face.thumb}></img>
     });
 
     return (
