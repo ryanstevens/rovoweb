@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios'
-
+import './home/containers/landing.css'
 import {Navbar, Nav, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
 
 class NavComponent extends React.Component {
@@ -31,6 +31,10 @@ class NavComponent extends React.Component {
       if (this.state && this.state.thumb) {
         LogInButton = <div>{this.state.name}</div>
       }
+    let LogInButton = <Button pullRight className="buttonStyle navbar-btn" onClick={(() => window.location.href='/login/auth')}>Login</Button>
+    if (this.state && this.state.thumb) {
+      LogInButton = <Navbar.Text pullRight> {this.state.name}</Navbar.Text>
+    }
 
       addButton = <Button pullRight className="buttonStyle navbar-btn" onClick={this.openAdd}>Add+ Experience</Button>;
       if (window.location.pathname.indexOf('share')>0) addButton = <span />
@@ -46,7 +50,7 @@ class NavComponent extends React.Component {
         <Navbar.Collapse>
           <Navbar.Form pullLeft>
             <FormGroup>
-              <FormControl type="text" placeholder="Search " />
+              <FormControl type="text" placeholder="Search " id="searchbar" />
             </FormGroup>
           </Navbar.Form>
           <Nav pullRight>

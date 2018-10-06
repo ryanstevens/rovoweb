@@ -1,10 +1,10 @@
 import React from 'react';
 import Landing from './landing'
 import PropTypes from 'prop-types';
-import Nav from '../../nav'
 import './landing.css';
+import NavComponent from '../../nav';
 
-import {FormGroup, FormControl, Form, Button} from 'react-bootstrap'
+import {Navbar, Nav, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
 
 class Home extends React.Component {
 
@@ -13,15 +13,9 @@ class Home extends React.Component {
 	  this.state = {
 		  showComponent: false,
 	  };
-	  this.renderComponent = this.renderComponent.bind(this);
 	  this.loadPage = this.loadPage.bind(this);
 	  this.openAdd = this.openAdd.bind(this);
   }
-	renderComponent() {
-		this.setState({
-			showComponent: true,
-		});
-	}
 	loadPage() {
 		window.location.href = '/business';
 	}
@@ -35,12 +29,14 @@ class Home extends React.Component {
     return (
     <div>
       <div>
-        <Nav />
+		<NavComponent />
       </div>
-      <div>
+	<div>
         <Landing />
-      </div>
-
+	</div>
+	<div>
+		<Button bsStyle="primary" onClick={this.loadPage}>Business Page</Button>
+	</div>
     </div>
     )
   }

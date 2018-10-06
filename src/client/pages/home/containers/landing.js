@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // import './landing.css'
-import {Grid, Row, Col, Thumbnail, Button} from 'react-bootstrap'
+import {Grid, Row, Col, Thumbnail, Button, Image} from 'react-bootstrap'
 import axios from 'axios'
 
 class UGC extends Component {
@@ -30,13 +30,10 @@ class UGC extends Component {
 
 		const arr =  items.filter(item => (i++ % 3 === column)).map(item => {
 			return (
-				<Thumbnail src={item.fileLocation} alt="placeholder" onClick={this.clickPic.bind(this, item)}>
-					<h3>Title of picture</h3>
-					<p>Description/hashtag</p>
-					<p><Button bsStyle="primary">Follow</Button>
-					<Button bsStyle="default">See More</Button>
-					</p>
-				</Thumbnail>
+				<div>
+				<Image src={item.fileLocation} alt="placeholder" onClick={this.clickPic.bind(this, item)} />
+				<p>Description/hashtag</p>
+				</div>
 			)
 		});
 
@@ -52,14 +49,13 @@ class UGC extends Component {
 		<div>
 			<Grid>
 				<Row>
-					<Col xs={6} md={4}>
+					<Col xs={6} md={3}>
 						{ this.renderColumn(0)	}
-						
 					</Col>
 					<Col xs = {6} md={4}>
 						{ this.renderColumn(1) }
 					</Col>
-					<Col xs = {6} md={4}>
+					<Col xs = {6} md={5}>
 						{this.renderColumn(2) }
 					</Col>
 				</Row>
