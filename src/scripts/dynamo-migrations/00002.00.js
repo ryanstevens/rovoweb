@@ -18,10 +18,10 @@ module.exports = async function() {
       content_uuid: node_uuid.v4()
     },item, imageOverride));
     
-    const saver = util.promisify(content.save).bind(content);
+    const saver = util.promisify(content.save.bind(content));
     console.log('Saving ', item);
-    await saver;
-  
+    console.log(await saver());
+    
   }
 
 }
