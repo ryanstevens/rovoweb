@@ -130,13 +130,58 @@ names.forEach(name => {
   })
 })
 
+const youTubes = [
+  'yGXv6-jU7LU',
+  'yGXv6-jU7LU',
+  'jsMfE-UrO30',
+  'fTqKoMm--Yc',
+  'ahufEhWcUkI',
+  '86gOSIDS6OQ',
+  'OU6HqH4KhCQ',
+  '92VNSTsAmgg',
+  'zUSvieorPGk',
+  'w0zsMoxTjJ0',
+  '97RCMzQKjbg',
+  'u7Dlc_NKlFo',
+  'i7nkLEeA0Cg',
+  'ritTgYWpBYg',
+  'EcuPdQlsbDY',
+  '6LXO11ikOGQ',
+  'dV4dLXAbGKo'
+ // '<iframe width="200" height="200" src="https://www.youtube.com/embed/yGXv6-jU7LU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+]
 
-const experiences = [
+const experiences = youTubes.map(tube => {
+  return {
+    "title": "So FUN!!!",
+    "image_id": 1,
+    "hashtags": ["dance", "yoga"],
+    "video_id": tube,
+    "fileLocation": `https://img.youtube.com/vi/${tube}/0.jpg`,
+    "location": 
+      {
+        "city": "san francisco",
+        "state": "ca"
+      },
+    "uploadDate": "10/01/18",
+    "uploadTime": "12:00:00pm",
+    "likes": "42",
+    "shares": "10",
+    "comments": 
+      {
+        "user1": "really fun event!",
+        "user2": "cool =D"
+      }
+  }
+});
+
+const experiencesw = [
   {
     "title": "So FUN!!!",
     "image_id": 1,
     "hashtags": ["dance", "yoga"],
-    "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+    "asset_type": 'video',
+    "fileLocation": youTubes[0],
     "location": 
       {
         "city": "san francisco",
@@ -157,6 +202,7 @@ const experiences = [
     "title": "Pretty great",
     "image_id": 1,
     "hashtags": ["dance", "yoga"],
+    "asset_type": 'image',
     "fileLocation": 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=350',
     "location": 
       {

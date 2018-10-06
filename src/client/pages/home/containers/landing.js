@@ -29,9 +29,10 @@ class UGC extends Component {
 		if (this.state && this.state.data) items = this.state.data;
 
 		const arr =  items.filter(item => (i++ % 3 === column)).map(item => {
+			let asset = <Image src={item.fileLocation} alt="placeholder" onClick={this.clickPic.bind(this, item)} />
 			return (
 				<div>
-				<Image src={item.fileLocation} alt="placeholder" onClick={this.clickPic.bind(this, item)} />
+				{asset}
 				<p>Description/hashtag</p>
 				</div>
 			)
@@ -59,7 +60,7 @@ class UGC extends Component {
 						{this.renderColumn(2) }
 					</Col>
 				</Row>
-			</Grid>;
+			</Grid>
 		</div>
 		)
 	}
