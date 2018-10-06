@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './index.css';
 import axios from 'axios'
+import Nav from '../nav'
 
-import {Navbar, Nav, FormGroup, FormControl, Form, Button, Col, Row, Grid, Thumbnail, Image } from 'react-bootstrap'
+
+import { FormGroup, FormControl, Form, Button, Col, Row, Grid, Thumbnail, Image } from 'react-bootstrap'
 
 class Container extends React.Component {
 
@@ -28,25 +30,8 @@ class Container extends React.Component {
     return (
     <div>
       	<div>
-			<Navbar>
-				<Navbar.Header pullLeft>
-					<Navbar.Brand>
-						<a href="/">ROVO</a>
-					</Navbar.Brand>
-				</Navbar.Header>
-			<Navbar.Collapse>
-				<Navbar.Form pullLeft>
-					<FormGroup>
-						<FormControl type="text" placeholder="Search " />
-					</FormGroup>
-				</Navbar.Form>
-				<Nav pullRight>
-					<Button pullRight className="buttonStyle navbar-btn">Add+ Experience</Button>
-					<Button pullRight className="buttonStyle navbar-btn">Login</Button>
-			</Nav>
-		</Navbar.Collapse>
-		</Navbar>
-	</div>
+        <Nav />
+	    </div>
 		<div>
 		<Button bsStyle="primary" onClick={(() => window.location.href = '/')}>Home Page</Button>
     	</div>

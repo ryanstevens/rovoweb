@@ -48,20 +48,23 @@ module.exports = function setupRoute({paths, decorators} = boringApp) {
 
         if (results.length === 1) {
           req.session.user_uuid = results[0].user_uuid;
-          res.redirect("/login/user");
+          res.redirect("/");
         }
         else {
           const uid = uuid.v4();
+          console.log("USER", req.user)
           const user = new User({
             user_uuid: uid,
             provider_user_id: req.user.user_id,
+            thumb: req.user.picture,
+            name: req.user.displayName,
             roles: ['user']
           })
     
           req.session.user_uuid = uid;
           
           user.save(function(err) {
-            res.redirect("/login/user");
+            res.redirect("/");
           });
         }
       });

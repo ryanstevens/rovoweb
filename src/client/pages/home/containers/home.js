@@ -1,9 +1,10 @@
 import React from 'react';
 import Landing from './landing'
 import PropTypes from 'prop-types';
+import Nav from '../../nav'
 import './landing.css';
 
-import {Navbar, Nav, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
+import {FormGroup, FormControl, Form, Button} from 'react-bootstrap'
 
 class Home extends React.Component {
 
@@ -34,28 +35,11 @@ class Home extends React.Component {
     return (
     <div>
       <div>
-        <Navbar>
-          <Navbar.Header pullLeft>
-            <Navbar.Brand>
-              <a href="#">ROVO</a>
-            </Navbar.Brand>
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Navbar.Form pullLeft>
-              <FormGroup>
-                <FormControl type="text" placeholder="Search " />
-              </FormGroup>
-            </Navbar.Form>
-            <Nav pullRight>
-              <Button pullRight className="buttonStyle navbar-btn" onClick={this.openAdd}>Add+ Experience</Button>
-              <Button pullRight className="buttonStyle navbar-btn">Login</Button>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
+        <Nav />
       </div>
-	<div>
+      <div>
         <Landing />
-	</div>
+      </div>
 
     </div>
     )
