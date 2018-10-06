@@ -66,6 +66,7 @@ class Container extends React.Component {
       return <div>loading</div>
     }
 
+
     return (
       <div>
 		<div>
@@ -75,11 +76,10 @@ class Container extends React.Component {
 			<Button bsStyle="primary" onClick={this.loadPage}>Home Page</Button>
 			<Button bsStyle="primary" onClick={this.loadBusiness.bind(this, this.state.data)}>Business Page</Button>
 		</div>
-         <Thumbnail src={this.state.data.fileLocation} alt="placeholder">
+    <div dangerouslySetInnerHTML={{__html: `<iframe width="708" height="398" src="https://www.youtube.com/embed/${this.state.data.video_id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`}} alt="placeholder" />
          <img src={this.state.data.user.thumb} alt="placeholder" class="userFace" />
 					<h3>{ this.state.data.title }</h3>
 					<p>Description/hashtag</p>
-				</Thumbnail>
         <Recommenders />
       </div>
     )

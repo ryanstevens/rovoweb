@@ -34,12 +34,10 @@ module.exports = async function() {
     return biz;
   }))
   
-
-
-  var items = Array.apply(null, Array(30));
-  items = items.map(item => draw(experiences));
+  // var items = Array.apply(null, Array(30));
+  // items = items.map(item => draw(experiences));
   
-  const contentModels = await Promise.all(items.map(async function(item) {
+  const contentModels = await Promise.all(experiences.map(async function(item) {
     
     const content = new Content(Object.assign({}, {
       content_uuid: node_uuid.v4()
@@ -175,48 +173,48 @@ const experiences = youTubes.map(tube => {
   }
 });
 
-const experiencesw = [
-  {
-    "title": "So FUN!!!",
-    "image_id": 1,
-    "hashtags": ["dance", "yoga"],
-    "asset_type": 'video',
-    "fileLocation": youTubes[0],
-    "location": 
-      {
-        "city": "san francisco",
-        "state": "ca"
-      },
-    "uploadDate": "10/01/18",
-    "uploadTime": "12:00:00pm",
-    "likes": "42",
-    "shares": "10",
-    "comments": 
-      {
-        "user1": "really fun event!",
-        "user2": "cool =D"
-      }
-  },
+// const experiencesw = [
+//   {
+//     "title": "So FUN!!!",
+//     "image_id": 1,
+//     "hashtags": ["dance", "yoga"],
+//     "asset_type": 'video',
+//     "fileLocation": youTubes[0],
+//     "location": 
+//       {
+//         "city": "san francisco",
+//         "state": "ca"
+//       },
+//     "uploadDate": "10/01/18",
+//     "uploadTime": "12:00:00pm",
+//     "likes": "42",
+//     "shares": "10",
+//     "comments": 
+//       {
+//         "user1": "really fun event!",
+//         "user2": "cool =D"
+//       }
+//   },
   
-  {
-    "title": "Pretty great",
-    "image_id": 1,
-    "hashtags": ["dance", "yoga"],
-    "asset_type": 'image',
-    "fileLocation": 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=350',
-    "location": 
-      {
-        "city": "san francisco",
-        "state": "ca"
-      },
-    "uploadDate": "10/01/18",
-    "uploadTime": "12:00:00pm",
-    "likes": "42",
-    "shares": "10",
-    "comments": 
-      {
-        "user1": "really fun event!",
-        "user2": "cool =D"
-      }
-  }
-]
+//   {
+//     "title": "Pretty great",
+//     "image_id": 1,
+//     "hashtags": ["dance", "yoga"],
+//     "asset_type": 'image',
+//     "fileLocation": 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=350',
+//     "location": 
+//       {
+//         "city": "san francisco",
+//         "state": "ca"
+//       },
+//     "uploadDate": "10/01/18",
+//     "uploadTime": "12:00:00pm",
+//     "likes": "42",
+//     "shares": "10",
+//     "comments": 
+//       {
+//         "user1": "really fun event!",
+//         "user2": "cool =D"
+//       }
+//   }
+// ]
