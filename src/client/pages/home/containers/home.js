@@ -5,13 +5,6 @@ import './landing.css';
 
 import {Navbar, Nav, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
 
-const styles = theme => ({
-  homebox: {
-    height: '100px',
-    width: '100%'
-  }
-});
-
 class Home extends React.Component {
 
   constructor(props) {
@@ -46,6 +39,7 @@ class Home extends React.Component {
       </div>
       <div>
         <Landing />
+//		<AddExperience />
 		  </div>
     </div>
     )
