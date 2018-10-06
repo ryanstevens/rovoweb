@@ -67,6 +67,71 @@ module.exports = function setupRoute(boringApp) {
       
       `);
     } 
+  
+    @get('/listings')
+    listing(req, res) {
+      
+      res.json([
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "./root/image001.jpeg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 2,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "./root/image001.jpeg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        
+        {
+          "image_id": 3,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "./root/image001.jpeg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        }
+      ]);
+    }
 
   }
   

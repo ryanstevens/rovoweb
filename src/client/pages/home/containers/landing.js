@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 // import './landing.css'
 import {Grid, Row, Col, Thumbnail, Button} from 'react-bootstrap'
+import axios from 'axios'
 
 class UGC extends Component {
 	constructor(props) {
 		super(props);
+		axios.get('/listings').then(results => {
+			console.log("GOTZ STUFF", results)
+		});
 	}
 	//we'll have a function here for rendering search content
 	//Called when this class is being created elsewhere
