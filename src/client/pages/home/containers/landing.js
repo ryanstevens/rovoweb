@@ -33,7 +33,7 @@ class UGC extends Component {
 			return (
 				<div>
 				{asset}
-				<p>Description/hashtag</p>
+				<p align="center">Description/hashtag</p>
 				</div>
 			)
 		});
