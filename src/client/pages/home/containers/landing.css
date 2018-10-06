@@ -56,8 +56,13 @@
 	width: 250%;
 }
 
+.list-grid {
+	width: 80%;
+	margin: auto;
+}
+
 img.resize {
-	width: 75%;
+	width: 100%;
 	height: auto;
 }
 
