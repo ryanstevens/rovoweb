@@ -169,11 +169,81 @@ const youTubes = [
  // '<iframe width="200" height="200" src="https://www.youtube.com/embed/yGXv6-jU7LU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
 ]
 
+function returnRandomStr(array) {
+	return array[Math.floor(Math.random() * array.length)];
+}
+
+const titles = [
+	"Rodney's choreo was awesome!",
+	"Gettin' hyphy with e-40",
+	"Breakin a sweat with this choreo",
+	"So much fun!",
+	"Finally dancing again after tweaking my back a little",
+	"This was FAST but so much fun!!",
+	"Learned my first hip-hop routine. Woo!",
+	"One of the classes at the studio",
+	"Great job everyone! Love you all!!!",
+	"Class was lit!",
+	"Fun times with Lo",
+	"Amazing class with amazing people",
+	"NAILED IT!!!",
+	"Tonight was freaking awesome",
+	"Always a blast with this crew",
+	"This was my favorite!!!",
+	"Props to everyone in my class tonight. Thank you!"
+]
+
+const hashtags = [
+	"#country",
+	"#twostepping",
+	"#jonpardi",
+	"#countrywestern",
+	"#bestshot",
+	"#jimmyallen",
+	"#twostepping",
+	"#flips",
+	"#dips",
+	"#aerials",
+	"#swing",
+	"#twostepping",
+	"#thomasrhett",
+	"#countrymusic",
+	"#linedancing",
+	"#countrygirl",
+	"#lukebryan",
+	"#linedance",
+	"#lonelydrum",
+	"#aarongoodvin",
+	"#countrydance",
+	"#e40",
+	"#hyphy",
+	"#hiphop",
+	"#bayarea",
+	"#hipop",
+	"#warriors",
+	"#bigbank",
+	"#yg #hiphop",
+	"#levelup",
+	"#dancechallenge",
+	"#ciara",
+	"#heelsclass",
+	"#hiphop",
+	"#levelup",
+	"#inmyfeelings",
+	"#drake",
+	"#hiphop",
+	"#2am",
+	"#sagethegemini",
+	"#masterclass",
+	"#masterclass",
+	"#hiphop",
+	"#yg"
+]
 const experiences = youTubes.map(tube => {
   return {
-    "title": "So FUN!!!",
+    "title": returnRandomStr(titles),
     "image_id": 1,
-    "hashtags": ["dance", "yoga"],
+    "hashtags": [returnRandomStr(hashtags), returnRandomStr(hashtags)],
     "video_id": tube,
     "fileLocation": `https://img.youtube.com/vi/${tube}/0.jpg`,
     "location": 

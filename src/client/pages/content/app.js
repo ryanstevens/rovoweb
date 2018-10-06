@@ -80,7 +80,7 @@ class Container extends React.Component {
     <div dangerouslySetInnerHTML={{__html: `<iframe width="708" height="398" src="https://www.youtube.com/embed/${this.state.data.video_id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`}} alt="placeholder" />
          <img src={this.state.data.user.thumb} alt="placeholder" class="userFace" />
 					<h3>{ this.state.data.title }</h3>
-					<p>Description/hashtag</p>
+					<p>{ this.state.data.hashtags}</p>
         <Recommenders />
       </div>
     )
