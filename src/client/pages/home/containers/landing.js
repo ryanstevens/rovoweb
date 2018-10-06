@@ -6,10 +6,36 @@ import axios from 'axios'
 class UGC extends Component {
 	constructor(props) {
 		super(props);
-		axios.get('/listings').then(results => {
-			console.log("GOTZ STUFF", results)
-		});
+		
 	}
+
+	componentDidMount() {
+		axios.get('/listings').then(results => {
+			this.setState({
+				data: results.data
+			});
+		});
+  }
+
+	renderColumn() {
+		let items = []
+		if (this.state && this.state.data) items = this.state.data;
+
+		const arr =  items.map(item => {
+			return (
+				<Thumbnail src={item.fileLocation} alt="placeholder">
+					<h3>Title of picture</h3>
+					<p>Description/hashtag</p>
+					<p><Button bsStyle="primary">Follow</Button>
+					<Button bsStyle="default">See More</Button>
+					</p>
+				</Thumbnail>
+			)
+		});
+
+		return arr;
+	}
+
 	//we'll have a function here for rendering search content
 	//Called when this class is being created elsewhere
 	render() {
@@ -18,34 +44,10 @@ class UGC extends Component {
 			<Grid>
 				<Row>
 					<Col xs={6} md={4}>
-						<Thumbnail src=".../assets/logo_login.png" alt="placeholder">
-							<h3>Title of picture</h3>
-							<p>Description/hashtag</p>
-							<p><Button bsStyle="primary">Follow</Button>
-							<Button bsStyle="default">See More</Button>
-							</p>
-						</Thumbnail>
+						{ this.renderColumn()	}
+						
 					</Col>
-					<Col xs={6} md={4}>
-						<Thumbnail src=".../assets/logo_login.png" alt="Placeholder">
-							<h3>Title of Picture</h3>
-							<p>Description</p>
-							<p>
-							<Button bsStyle="primary">Button</Button>
-							<Button bsStyle="default">Button</Button>
-							</p>
-						</Thumbnail>
-					</Col>
-					<Col xs={6} md={4}>
-						<Thumbnail src=".../assets/logo_login.png" alt="Placeholder">
-						<h3>Thumbnail label</h3>
-						<p>Description</p>
-						<p>
-						<Button bsStyle="primary">Button</Button>
-						<Button bsStyle="default">Button</Button>
-						</p>
-						</Thumbnail>
-					</Col>
+				
 				</Row>
 			</Grid>;
 		</div>

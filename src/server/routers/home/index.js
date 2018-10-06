@@ -75,7 +75,1755 @@ module.exports = function setupRoute(boringApp) {
         {
           "image_id": 1,
           "hashtags": ["dance", "yoga"],
-          "fileLocation": "./root/image001.jpeg",
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
+          "location": 
+            {
+              "city": "san francisco",
+              "state": "ca"
+            },
+          "uploadDate": "10/01/18",
+          "uploadTime": "12:00:00pm",
+          "likes": "42",
+          "shares": "10",
+          "comments": 
+            {
+              "user1": "really fun event!",
+              "user2": "cool =D"
+            }
+        },
+        {
+          "image_id": 1,
+          "hashtags": ["dance", "yoga"],
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
           "location": 
             {
               "city": "san francisco",
@@ -94,7 +1842,7 @@ module.exports = function setupRoute(boringApp) {
         {
           "image_id": 2,
           "hashtags": ["dance", "yoga"],
-          "fileLocation": "./root/image001.jpeg",
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
           "location": 
             {
               "city": "san francisco",
@@ -114,7 +1862,7 @@ module.exports = function setupRoute(boringApp) {
         {
           "image_id": 3,
           "hashtags": ["dance", "yoga"],
-          "fileLocation": "./root/image001.jpeg",
+          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
           "location": 
             {
               "city": "san francisco",
