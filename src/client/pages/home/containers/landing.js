@@ -33,7 +33,7 @@ class UGC extends Component {
 			return (
 				<div>
 				{asset}
-				<p className="imgHash">#{item.hashtags[0]}</p>
+				<p className="imgHash">{item.hashtags[0]}</p>
 				</div>
 			)
 		});
