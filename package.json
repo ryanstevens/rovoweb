@@ -10,7 +10,8 @@
     "build-node": "NODE_ENV=production npx boring-build-node",
     "build-client": "NODE_ENV=production npx boring-build-client",
     "build": "npm run build-node && npm run build-client",
-    "seed-dynomo": "node src/scripts/create-db.js",
+    "build-scratch": "npm run build-node && npm run up && npm run build-db && npm run build-client",
+    "build-db": "node src/scripts/create-db.js",
     "up": "docker-compose up -d",
     "debug": "NODE_ENV=development node --inspect-brk src/server/dev-entry",
     "prepublish": "npm run build"
