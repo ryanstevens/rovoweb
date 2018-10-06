@@ -1,12 +1,10 @@
 import ReactDOM from 'react-dom';
 import React from 'react'
-import getAppComponents from './AppInit'
+import Home from './containers/home'
 
-const {Container} = getAppComponents();
-
-ReactDOM.hydrate(
-  <Container />,
-  document.querySelector('#root'),
+ReactDOM.render(
+  <Home />,
+  document.querySelector('#react'),
 );
 
 
