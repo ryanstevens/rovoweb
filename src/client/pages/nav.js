@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios'
 import './home/containers/landing.css'
 import {Navbar, Nav, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
+import Logo from '../../assets/ROVOBetaLogoEDIT_5percent.png';
 
 class NavComponent extends React.Component {
 
@@ -41,7 +42,7 @@ class NavComponent extends React.Component {
       <Navbar>
         <Navbar.Header pullLeft>
           <Navbar.Brand>
-            <a href="/">ROVO</a>
+            <a href="/"><img src={Logo}></img></a>
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
