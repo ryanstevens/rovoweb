@@ -22,6 +22,9 @@ module.exports = function setupRoute(boringApp) {
     @get('/content-get/:uuid')
     contentGet(req, res) {
 
+      req.session.lastPage = '/share';
+
+
       const Content = dynamo_utils.getModel('Content');
       const User = dynamo_utils.getModel('User');
 

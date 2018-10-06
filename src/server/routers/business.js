@@ -20,6 +20,7 @@ module.exports = function setupRoute(boringApp) {
     
     @get('/business-get/:uuid')
     businessGet(req, res) {
+      req.session.lastPage = '/share';
       
       const Business = dynamo_utils.getModel('Business');
       

@@ -44,11 +44,13 @@ module.exports = function setupRoute({paths, decorators} = boringApp) {
     callback(req, res) {
       const User = dyanmo_utils.getModel('User');
 
+      const rediectTo = req.session.lastPage || '/'
+
       User.query('provider_user_id').eq(req.user.user_id).exec(function(err, results) {
 
         if (results.length === 1) {
           req.session.user_uuid = results[0].user_uuid;
-          res.redirect("/");
+          res.redirect(rediectTo);
         }
         else {
           const uid = uuid.v4();
@@ -64,7 +66,7 @@ module.exports = function setupRoute({paths, decorators} = boringApp) {
           req.session.user_uuid = uid;
           
           user.save(function(err) {
-            res.redirect("/");
+            res.redirect(rediectTo);
           });
         }
       });

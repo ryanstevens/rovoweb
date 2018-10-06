@@ -19,31 +19,34 @@ module.exports = function setupRoute(boringApp) {
   class Home {
     
     @get('/share')
-    @middleware(ensureLoggedIn)
     @entrypoint(path.normalize(paths.app_dir + '/client/pages/share/entrypoint.js'))
     serveHomePage(req, res) {
       
+      req.session.lastPage = '/share';
 
-      res.send(`
-      <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    ${res.locals.css_injections}
-  </head>
+      ensureLoggedIn(req, res, function() {
+                
+        res.send(`
+              <!DOCTYPE html>
+          <html>
+            <head>
+              <meta charset="utf-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              
+              ${res.locals.css_injections}
+            </head>
 
-  <body style="background-color: #fafafa;">
-    <div id="react">
-    </div>
-    ${res.locals.js_injections}
-  </body>
-</html>
+            <body style="background-color: #fafafa;">
+              <div id="react">
+              </div>
+              ${res.locals.js_injections}
+            </body>
+          </html>
 
-      
-      
-      `);
+              
+              
+              `);
+      })
     } 
 
   }
