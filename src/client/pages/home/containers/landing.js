@@ -60,10 +60,6 @@ class UGC extends Component {
 					</Col>
 				</Row>
 			</Grid>
-<<<<<<< HEAD
-		</div>
-=======
->>>>>>> updated styling
 		)
 	}
 }
