@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './index.css';
 import Nav from '../nav'
 
-
 import {ControlLabel, FieldGroup, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
 
 class Container extends React.Component {

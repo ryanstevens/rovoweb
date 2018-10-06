@@ -1,7 +1,7 @@
 import React from 'react';
 import Landing from './landing'
 import PropTypes from 'prop-types';
-import './landing.css';
+import './home.css';
 import NavComponent from '../../nav';
 
 import {Navbar, Nav, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
@@ -28,15 +28,15 @@ class Home extends React.Component {
 
     return (
     <div>
-      <div>
-		<NavComponent />
-      </div>
-	<div>
-        <Landing />
-	</div>
-	<div>
-		<Button bsStyle="primary" onClick={this.loadPage}>Business Page</Button>
-	</div>
+		<div>
+			<NavComponent />
+		</div>
+		<div className="landingDiv">
+        	<Landing />
+		</div>
+		<div>
+			<Button bsStyle="primary" onClick={this.loadPage}>Business Page</Button>
+		</div>
     </div>
     )
   }

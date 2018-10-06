@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import './landing.css'
+import './landing.css'
 import {Grid, Row, Col, Thumbnail, Button, Image} from 'react-bootstrap'
 import axios from 'axios'
 
@@ -47,7 +47,6 @@ class UGC extends Component {
 
 
 		return (
-		<div>
 			<Grid>
 				<Row>
 					<Col xs={6} md={3}>
@@ -56,12 +55,15 @@ class UGC extends Component {
 					<Col xs = {6} md={4}>
 						{ this.renderColumn(1) }
 					</Col>
-					<Col xs = {6} md={5}>
+					<Col xs = {6} md={4}>
 						{this.renderColumn(2) }
 					</Col>
 				</Row>
 			</Grid>
+<<<<<<< HEAD
 		</div>
+=======
+>>>>>>> updated styling
 		)
 	}
 }

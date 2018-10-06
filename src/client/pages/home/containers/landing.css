@@ -47,3 +47,8 @@
 #searchbar {
 	width: 250%;
 }
+
+img.resize {
+	width: 75%;
+	height: auto;
+}
