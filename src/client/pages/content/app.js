@@ -76,7 +76,7 @@ class Container extends React.Component {
 			<Button bsStyle="primary" onClick={this.loadBusiness.bind(this, this.state.data)}>Business Page</Button>
 		</div>
          <Thumbnail src={this.state.data.fileLocation} alt="placeholder">
-         <Thumbnail src={this.state.data.user.thumb} alt="placeholder" class="round"></Thumbnail>
+         <img src={this.state.data.user.thumb} alt="placeholder" class="userFace" />
 					<h3>{ this.state.data.title }</h3>
 					<p>Description/hashtag</p>
 				</Thumbnail>
