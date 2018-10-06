@@ -5,7 +5,7 @@ import axios from 'axios'
 import Nav from '../nav'
 
 
-import { FormGroup, FormControl, Form, Button, Col, Row, Grid, Thumbnail, Image } from 'react-bootstrap'
+import { FormGroup, FormControl, Form, Button, Col, Row, Grid, Thumbnail, Image, ButtonGroup, Badge} from 'react-bootstrap'
 
 class Container extends React.Component {
 
@@ -40,13 +40,49 @@ class Container extends React.Component {
 		<Button bsStyle="primary" onClick={(() => window.location.href = '/')}>Home Page</Button>
     	</div>
 		
+		<div class="media">
+			<div class="media-left">
+				<img class="media-object" src={this.state.image} alt="pew"/>
+			</div>
+			<div class="media-body">
+				<h2>Dance studio name</h2>
+			</div>
+		</div>
+
 		<div>
 			<Grid>
 				<Row>
 					<Col xs={6} md={3}>
 						<img src={this.state.image} rounded />
 					</Col>
-					<Col xs={6} md={3} xsOffset={2}>
+					<Col xs={6} md={3} xsOffset={4}>
+						<Row>
+							<Col xs={6} md={3}>
+								<Thumbnail href="" alt="20x20" src={this.state.image} />
+							</Col>
+							<Col xs={6} md={3}>
+								<h4>Millenial Dance Complex</h4>
+							</Col>
+						</Row>
+						<Row>
+							<Col xs={6} md={3}>
+								<h3>#hashtag1 #hashtag2 #hashtag3</h3>
+							</Col>
+							<h4>October 31, 2018</h4>
+						</Row>
+						<Row>
+							<Col xs={6} md={3}>
+								<p>Followers</p>
+							</Col>
+							<Col xs={6} md={3}>
+								<Badge>42</Badge>
+							</Col>
+							<Col xs={6} md={3}>
+								<Button>Follow</Button>
+							</Col>
+
+
+						</Row>
 					</Col>
 				</Row>
 			

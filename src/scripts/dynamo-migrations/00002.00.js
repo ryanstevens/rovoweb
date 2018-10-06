@@ -74,7 +74,7 @@ const bizes = [
     claimed: true,
     user_count: 92,
     image: 'http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png'
-  }
+  },
 ]
 
 const names = [
