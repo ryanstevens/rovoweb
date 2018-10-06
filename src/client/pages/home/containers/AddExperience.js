@@ -1,6 +1,6 @@
 import React {Component} from 'react'
 import './AddExperience.css'
-import {Button} from 'react-bootstrap'
+import {Button, Modal} from 'react-bootstrap'
 /**
 class AddExperience extends React.Component {
 	constructor(props){
