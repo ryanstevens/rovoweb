@@ -39,7 +39,6 @@ class Home extends React.Component {
       </div>
       <div>
         <Landing />
-//		<AddExperience />
 		  </div>
     </div>
     )
