@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Home from './containers/home'
+import Login from './containers/login'
 
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -12,7 +12,7 @@ const styles = theme => ({
     flexGrow: 1,
     height: '100%'
   },
-  home: {
+  login: {
     padding: 6,
     textAlign: 'center',
     color: theme.palette.text.secondary
@@ -32,8 +32,8 @@ class App extends React.Component {
     return (
       <Grid container className={classes.root} >
         <Grid alignItems="center" justify="center" direction="row" container className={classes.log}>
-          <Paper className={classes.home}>
-            <Home />
+          <Paper className={classes.login}>
+            <Login />
           </Paper>
         </Grid>
       </Grid>  
