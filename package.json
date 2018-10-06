@@ -64,6 +64,7 @@
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.2",
+    "react-dropzone": "^6.0.2",
     "react-jss": "^8.6.1",
     "react-redux": "^5.0.7",
     "redis": "^2.8.0",

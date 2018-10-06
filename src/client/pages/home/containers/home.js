@@ -14,6 +14,7 @@ class Home extends React.Component {
 	  };
 	  this.renderComponent = this.renderComponent.bind(this);
 	  this.loadPage = this.loadPage.bind(this);
+	  this.openAdd = this.openAdd.bind(this);
   }
 	renderComponent() {
 		this.setState({
@@ -22,6 +23,9 @@ class Home extends React.Component {
 	}
 	loadPage() {
 		window.open('/business');
+	}
+	openAdd() {
+		window.open('/share');
 	}
   render() {
     
@@ -43,7 +47,7 @@ class Home extends React.Component {
               </FormGroup>
             </Navbar.Form>
             <Nav pullRight>
-              <Button pullRight className="buttonStyle navbar-btn">Share Experience</Button>
+              <Button pullRight className="buttonStyle navbar-btn" onClick={this.openAdd}>Share Experience</Button>
               <Button pullRight className="buttonStyle navbar-btn">Login</Button>
             </Nav>
           </Navbar.Collapse>
