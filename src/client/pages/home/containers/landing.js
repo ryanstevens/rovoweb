@@ -29,11 +29,11 @@ class UGC extends Component {
 		if (this.state && this.state.data) items = this.state.data;
 
 		const arr =  items.filter(item => (i++ % 3 === column)).map(item => {
-			let asset = <Image className="resize" src={item.fileLocation} alt="placeholder" onClick={this.clickPic.bind(this, item)} />
+			let asset = <Image className="resize" src={item.fileLocation} alt="placeholder" onClick={this.clickPic.bind(this, item)} rounded/>
 			return (
 				<div>
 				{asset}
-				<p align="center">Description/hashtag</p>
+				<p className="imgHash">#{item.hashtags[0]}</p>
 				</div>
 			)
 		});
@@ -49,13 +49,13 @@ class UGC extends Component {
 		return (
 			<Grid>
 				<Row>
-					<Col xs={6} md={3}>
+					<Col xs={6} md={4}>
 						{ this.renderColumn(0)	}
 					</Col>
-					<Col xs = {6} md={4}>
+					<Col xs={6} md={4}>
 						{ this.renderColumn(1) }
 					</Col>
-					<Col xs = {6} md={4}>
+					<Col xs={6} md={4}>
 						{this.renderColumn(2) }
 					</Col>
 				</Row>

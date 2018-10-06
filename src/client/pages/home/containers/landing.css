@@ -60,3 +60,13 @@ img.resize {
 	width: 75%;
 	height: auto;
 }
+
+.imgHash {
+	font-weight: 250;
+	font-family: 'Roboto';
+	font-size: 16px;
+}
+
+.imgStyle {
+	padding-left: 10px;
+}
