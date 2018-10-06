@@ -6,10 +6,16 @@ module.exports = async function() {
 
   const Content = dynamo_utils.getModel('Content');
 
+  var i= 0;
   items.forEach(item => {
+    i++;
+    let imageOverride = {}
+    if (i % 2 === 0) {
+      imageOverride.fileLocation = 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=350'
+    }
     const content = new Content(Object.assign({}, {
       content_uuid: node_uuid.v4()
-    },item,  {data: item}));
+    },item, imageOverride));
     
     content.save();
   
