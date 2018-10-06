@@ -1,8 +1,28 @@
 
-.userFace {
-  width: 80px;
-  height: auto;
-  border-radius: 50%;
 
+.userFace {
+  width:70px; /* you can use % */
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
 }
 
+
+.rec-row {
+  margin-top: 20px
+}
+
+.hashes {
+  font-size: 10pt
+}
+
+.share {
+  margin-top: 10px;
+  width: '100%'  !important;
+  height: 33px;
+}
+
+.follow-pad {
+  height: 50px;
+  margin-top: 65px;
+}

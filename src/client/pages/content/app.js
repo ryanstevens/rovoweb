@@ -70,18 +70,60 @@ class Container extends React.Component {
 
     return (
       <div>
-		<div>
-			<Nav />
-		</div>
-		<div>
+        <div>
+          <Nav />
+        </div>
+		{/* <div>
 			<Button bsStyle="primary" onClick={this.loadPage}>Home Page</Button>
 			<Button bsStyle="primary" onClick={this.loadBusiness.bind(this, this.state.data)}>Business Page</Button>
-		</div>
-    <div dangerouslySetInnerHTML={{__html: `<iframe width="708" height="398" src="https://www.youtube.com/embed/${this.state.data.video_id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`}} alt="placeholder" />
-         <img src={this.state.data.user.thumb} alt="placeholder" class="userFace" />
-					<h3>{ this.state.data.title }</h3>
-					<p>{ this.state.data.hashtags}</p>
-        <Recommenders />
+    </div> */}
+    
+        <Grid>
+          <Row>
+            <Col xs={6} md={6}>
+
+                <div dangerouslySetInnerHTML={{__html: `<iframe width="570" height="320" src="https://www.youtube.com/embed/${this.state.data.video_id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`}} alt="placeholder" />
+
+
+            </Col>
+            <Col xs={6} md={6}>
+              <Row>
+                <Col md={2}>              
+                  <img src={this.state.data.user.thumb} alt="placeholder" class="userFace" />
+                </Col>
+                <Col md={10}>
+                  <h1>{ this.state.data.user.name }</h1>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={12}>
+                  <h3>{ this.state.data.title }</h3>
+                  <p class="hashes">{ this.state.data.hashtags}</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={12}>
+                  <Button className="share" block={true} bsStyle="warning">Share</Button>
+                </Col>
+              </Row>
+              <Row >
+                <Col md={8}>
+                </Col>
+                <Col md={4}>
+                  <Button className="follow-pad" block={true} onClick={this.loadBusiness.bind(this, this.state.data)}>Follow</Button>
+
+                </Col>
+              </Row>
+
+            </Col>
+          </Row>  
+          <Row className='rec-row'> 
+            <Col md={12}>
+              
+              <Recommenders />
+            </Col>
+          </Row>
+        </Grid>
       </div>
     )
   }
