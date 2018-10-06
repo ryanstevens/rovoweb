@@ -1,9 +1,6 @@
 
 const path = require('path');
-const Layout = require('../../lib/layout')
-import ReactDOMServer from 'react-dom/server';
-import React from 'react';
-
+const dynamo_utils = require('dynamo-utils');
 
 module.exports = function setupRoute(boringApp) {
 
@@ -71,85 +68,11 @@ module.exports = function setupRoute(boringApp) {
     @get('/listings')
     listing(req, res) {
       
-      res.json([
-        {
-          "image_id": 1,
-          "hashtags": ["dance", "yoga"],
-          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
-          "location": 
-            {
-              "city": "san francisco",
-              "state": "ca"
-            },
-          "uploadDate": "10/01/18",
-          "uploadTime": "12:00:00pm",
-          "likes": "42",
-          "shares": "10",
-          "comments": 
-            {
-              "user1": "really fun event!",
-              "user2": "cool =D"
-            }
-        },
-        {
-          "image_id": 1,
-          "hashtags": ["dance", "yoga"],
-          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
-          "location": 
-            {
-              "city": "san francisco",
-              "state": "ca"
-            },
-          "uploadDate": "10/01/18",
-          "uploadTime": "12:00:00pm",
-          "likes": "42",
-          "shares": "10",
-          "comments": 
-            {
-              "user1": "really fun event!",
-              "user2": "cool =D"
-            }
-        },
-        {
-          "image_id": 2,
-          "hashtags": ["dance", "yoga"],
-          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
-          "location": 
-            {
-              "city": "san francisco",
-              "state": "ca"
-            },
-          "uploadDate": "10/01/18",
-          "uploadTime": "12:00:00pm",
-          "likes": "42",
-          "shares": "10",
-          "comments": 
-            {
-              "user1": "really fun event!",
-              "user2": "cool =D"
-            }
-        },
-        
-        {
-          "image_id": 3,
-          "hashtags": ["dance", "yoga"],
-          "fileLocation": "https://gazettereview.com/wp-content/uploads/2015/05/cat.jpg",
-          "location": 
-            {
-              "city": "san francisco",
-              "state": "ca"
-            },
-          "uploadDate": "10/01/18",
-          "uploadTime": "12:00:00pm",
-          "likes": "42",
-          "shares": "10",
-          "comments": 
-            {
-              "user1": "really fun event!",
-              "user2": "cool =D"
-            }
-        }
-      ]);
+      const Content = dynamo_utils.getModel('Content');
+      Content.scan({}, function(err, results) {
+        if (err || results.length === 0) return reject(err);
+        res.json(results)
+      });
     }
 
   }
