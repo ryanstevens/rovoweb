@@ -15,9 +15,15 @@ class Container extends React.Component {
   }
 
 	componentDidMount() {
-		axios.get('/business-get/' + window.location.pathname.split('/')[2]).then(results => {
-			this.setState(results.data);
+    
+		axios.get('/four-listings').then(listings => {
+        
+      axios.get('/business-get/' + window.location.pathname.split('/')[2]).then(results => {
+        this.setState(Object.assign({}, {content: Array.prototype.slice.call(listings.data)[0]} , results.data));
+      });
+
 		});
+
   }
 
   render() {
@@ -35,6 +41,12 @@ class Container extends React.Component {
     var i=0;
     facepile = facepile.filter(face => i++ < 5);
 
+    var claimed = (<div class='unclaimed'>Uncliamed</div>)
+    console.log(this.state)
+    if (this.state.status === 'claimed') {
+      claimed = '';
+    }
+
     return (
       <div>
       	<div>
@@ -43,40 +55,51 @@ class Container extends React.Component {
         <div>
           <Grid>
             <Row>
-              <Col xs={6} md={3}>
-                <img src={this.state.image} />
+              <Col xs={6} md={6}>
+              <div dangerouslySetInnerHTML={{__html: `<iframe width="570" height="320" src="https://www.youtube.com/embed/${this.state.content.video_id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`}} alt="placeholder" />
+         
+
               </Col>
-              <Col xs={6} md={3} xsOffset={4}>
+              <Col xs={6} md={6}>
                 <Row>
-                  <Col xs={12}>
-                    <h3>{this.state.name}</h3>
+                  <Col md={3} xs={2}>
+                  <img style={{width:'130px', height:'100px'}} src={this.state.image} />
+
+                  </Col>
+                  <Col  md={9} xs={10}>
+                    <h1>{this.state.name}</h1>
                   </Col>
                 </Row>
                 <Row>
-                  <Col xs={6} md={3}>
+                  <Col xs={6} md={12}>
+                     <h3>{this.state.address}</h3>
                   </Col>
-                  <h4>October 31, 2018</h4>
                 </Row>
                 <Row>
-                  <Col xs={6} md={3}>
-                    <p>Followers</p>
+                  <Col xs={6} md={12}>
+                     {claimed}
                   </Col>
-                  <Col xs={6} md={3}>
-                    <Badge>42</Badge>
-                  </Col>
-                  {/* <Col xs={6} md={3}>
-                    <Button>Follow</Button>
-                  </Col> */}
                 </Row>
-                <Row xs={20}>
-
-                  <Col xs={12}>
-                    <div class="face-container">
-                        {facepile}
-
-
-                      <div class="clear"></div>
-                    </div>
+                <Row>
+                  <Col xs={6} md={3} className="spacer">
+                  </Col>
+                </Row>
+                <Row>
+                  <Col md={3}></Col>
+                  <Col md={9}>
+                    <Row>
+                      <Col md={4}>
+                        <Badge>
+                          {this.state.user_count}</Badge>
+                          <p>Followers</p>
+                      </Col>
+                      <Col md={8}>
+                        <div class="face-container">
+                            {facepile}
+                            <div class="clear"></div>
+                        </div>
+                      </Col>
+                    </Row>
                   </Col>
                 </Row>
               </Col>

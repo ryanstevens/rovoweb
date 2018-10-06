@@ -11,6 +11,15 @@
   clear: after;
 }
 
+.unclaimed {
+  color: lightsalmon;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.spacer {
+  margin-bottom: 70px;
+}
 .rec-row {
   margin-top: 20px
 }

@@ -85,7 +85,7 @@ module.exports = function setupRoute(boringApp) {
           draw(results),
           draw(results),
           draw(results),
-          draw(results)
+          draw(results),
         ])
       });
     }
