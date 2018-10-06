@@ -50,7 +50,7 @@
     "aws-sdk": "^2.322.0",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "3.3.7",
     "boringbits": "https://github.com/ryanstevens/boring.git",
     "bunyan": "^1.8.12",
     "connect-ensure-login": "^0.1.1",
