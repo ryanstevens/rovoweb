@@ -15,7 +15,13 @@ class UGC extends Component {
 				data: results.data
 			});
 		});
+	}
+	
+	
+  clickPic(item) {
+    window.location.href = '/content/' + item.content_uuid;
   }
+
 
 	renderColumn() {
 		let items = []
@@ -23,7 +29,7 @@ class UGC extends Component {
 
 		const arr =  items.map(item => {
 			return (
-				<Thumbnail src={item.fileLocation} alt="placeholder">
+				<Thumbnail src={item.fileLocation} alt="placeholder" onClick={this.clickPic.bind(this, item)}>
 					<h3>Title of picture</h3>
 					<p>Description/hashtag</p>
 					<p><Button bsStyle="primary">Follow</Button>

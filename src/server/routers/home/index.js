@@ -70,7 +70,7 @@ module.exports = function setupRoute(boringApp) {
       
       const Content = dynamo_utils.getModel('Content');
       Content.scan({}, function(err, results) {
-        if (err || results.length === 0) return reject(err);
+        if (err || results.length === 0) return res.send(err);
         res.json(results)
       });
     }
