@@ -41,10 +41,8 @@ class NavComponent extends React.Component {
     return (
       <Navbar>
         <Navbar.Header pullLeft>
-          <Navbar.Brand>
             <div>
             <a class="logo-link" href="/"><img src={Logo}></img></a></div>
-          </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
           <Navbar.Form pullLeft>
