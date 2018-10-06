@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios'
 
 import {Navbar, Nav, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
 
@@ -6,21 +7,15 @@ class NavComponent extends React.Component {
 
   constructor(props) {
     super(props);
-	  this.state = {
-		  showComponent: false,
-	  };
-	  this.renderComponent = this.renderComponent.bind(this);
-	  this.loadPage = this.loadPage.bind(this);
 	  this.openAdd = this.openAdd.bind(this);
   }
-	renderComponent() {
-		this.setState({
-			showComponent: true,
+  
+	componentDidMount() {
+		axios.get('/login/user').then(results => {
+			this.setState(results.data);
 		});
-	}
-	loadPage() {
-		window.location.href = '/business';
-	}
+  }
+
 	openAdd() {
 		window.location.href = '/share';
 	}
@@ -32,7 +27,7 @@ class NavComponent extends React.Component {
       <Navbar>
         <Navbar.Header pullLeft>
           <Navbar.Brand>
-            <a href="#">ROVO</a>
+            <a href="/">ROVO</a>
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>

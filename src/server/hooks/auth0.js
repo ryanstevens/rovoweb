@@ -51,10 +51,7 @@ module.exports = function(BoringInjections) {
                   user_uuid: req.session.user_uuid
                 }, function(err, results) {
                   if (err || results.length === 0) return reject(err);
-                  auth0.getUser({id: results[0].provider_user_id}, function(err, expanded_user) {
-                    if (err) return reject(err);
-                    resolve(expanded_user);
-                  });
+                  resolve(results[0]);
                 });
               });
             

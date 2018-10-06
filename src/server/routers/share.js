@@ -2,6 +2,7 @@
 const path = require('path');
 import ReactDOMServer from 'react-dom/server';
 import React from 'react';
+const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn('/login/auth');
 
 
 module.exports = function setupRoute(boringApp) {
@@ -11,16 +12,14 @@ module.exports = function setupRoute(boringApp) {
     paths
    } = boringApp;
     
-  const { endpoint, get, entrypoint } = boringApp.decorators.router;
+  const { endpoint, get, entrypoint, middleware  } = boringApp.decorators.router;
 
 
   @endpoint()
   class Home {
-
-
-
     
     @get('/share')
+    @middleware(ensureLoggedIn)
     @entrypoint(path.normalize(paths.app_dir + '/client/pages/share/entrypoint.js'))
     serveHomePage(req, res) {
       
