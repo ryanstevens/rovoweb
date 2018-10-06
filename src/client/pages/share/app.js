@@ -12,10 +12,13 @@ class Container extends React.Component {
 		  caption: '',
 		  _location: '',
 		  hashtag: '',
+		  url: '',
 	  }
 	  this.updateCaption = this.updateCaption.bind(this);
   }
-
+	updateURL(e) {
+		this.setState({url: e.target.value});
+	}
 	updateCaption(e) {
 		this.setState({caption: e.target.value});
 	}
@@ -35,7 +38,7 @@ class Container extends React.Component {
 			<h1 align="center">Add Experience</h1>
 		</div>
 		<div>
-			<form>
+			<form onSubmit={this.handleSubmit}>
 				<FormGroup controlId="formBasicText">
 					<ControlLabel>Caption</ControlLabel>
 					<FormControl type="text" placeholder="Say something about the photo/video" value={this.state.value} onChange={this.updateCaption}/>
@@ -55,7 +58,11 @@ class Container extends React.Component {
 					<ControlLabel>Hashtags</ControlLabel>
 					<FormControl type="text" placeholder="Add hashtags to reach new audiences" value={this.state.value} onChange={this.updateHashtag}/>
 				</FormGroup>
-				<Button pullright type="submit">Done</Button>
+				<FormGroup controlId="formBasicText">
+					<ControlLabel>Image/Video URL</ControlLabel>
+					<FormControl type="text" placeholder="Enter video/image url" value={this.state.value} onChange={this.updateURL} />
+				</FormGroup>
+				<Button pullright type="submit">Submit</Button>
 			</form>
 		</div>
     </div>
