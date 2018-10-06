@@ -56,9 +56,7 @@ class Home extends React.Component {
 	<div>
         <Landing />
 	</div>
-	<div>
-		<Button bsStyle="primary" onClick={this.loadPage}>Business Page</Button>
-	</div>
+
     </div>
     )
   }

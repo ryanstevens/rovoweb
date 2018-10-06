@@ -12,6 +12,7 @@ class Container extends React.Component {
   }
 	loadPage() {
 		window.location.href = '/';
+
 	}
   render() {
     

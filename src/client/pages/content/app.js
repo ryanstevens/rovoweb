@@ -14,6 +14,9 @@ class Container extends React.Component {
 	loadPage() {
 		window.location.href = '/';
 	}
+	loadBusiness() {
+		window.open('/business');
+	}
 
   
 	componentDidMount() {
@@ -59,6 +62,7 @@ class Container extends React.Component {
 		</div>
 		<div>
 			<Button bsStyle="primary" onClick={this.loadPage}>Home Page</Button>
+			<Button bsStyle="primary" onClick={this.loadBusiness}>Business Page</Button>
 		</div>
          <Thumbnail src={this.state.data.fileLocation} alt="placeholder">
 					<h3>Title of picture</h3>
