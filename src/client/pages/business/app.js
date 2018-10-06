@@ -8,16 +8,41 @@ class Container extends React.Component {
 
   constructor(props) {
     super(props);
+	  this.loadPage = this.loadPage.bind(this);
   }
-
+	loadPage() {
+		window.open('/#');
+	}
   render() {
     
     const { classes } = this.props;
 
     return (
     <div>
-      sup, I'm content
-    </div>
+      	<div>
+			<Navbar>
+				<Navbar.Header pullLeft>
+					<Navbar.Brand>
+						<a href="#">ROVO</a>
+					</Navbar.Brand>
+				</Navbar.Header>
+			<Navbar.Collapse>
+				<Navbar.Form pullLeft>
+					<FormGroup>
+						<FormControl type="text" placeholder="Search " />
+					</FormGroup>
+				</Navbar.Form>
+				<Nav pullRight>
+					<Button pullRight className="buttonStyle navbar-btn">Share Experience</Button>
+					<Button pullRight className="buttonStyle navbar-btn">Login</Button>
+			</Nav>
+		</Navbar.Collapse>
+		</Navbar>
+	</div>
+		<div>
+		<Button bsStyle="primary" onClick={this.loadPage}>Home Page</Button>
+    	</div>
+	</div>
     )
   }
 }

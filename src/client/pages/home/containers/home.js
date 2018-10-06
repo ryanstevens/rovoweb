@@ -13,13 +13,16 @@ class Home extends React.Component {
 		  showComponent: false,
 	  };
 	  this.renderComponent = this.renderComponent.bind(this);
+	  this.loadPage = this.loadPage.bind(this);
   }
 	renderComponent() {
 		this.setState({
 			showComponent: true,
 		});
 	}
-
+	loadPage() {
+		window.open('/business');
+	}
   render() {
     
     const { classes } = this.props;
@@ -50,7 +53,7 @@ class Home extends React.Component {
         <Landing />
 	</div>
 	<div>
-		<Button bsStyle="primary" onClick={this.renderComponent}>Business Page</Button>
+		<Button bsStyle="primary" onClick={this.loadPage}>Business Page</Button>
 	</div>
     </div>
     )
