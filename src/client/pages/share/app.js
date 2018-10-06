@@ -36,37 +36,38 @@ class Container extends React.Component {
 
     return (
     <div>
-		<div>
-			<h1 align="center">Add Experience</h1>
-		</div>
-		<div>
-			<form onSubmit={this.handleSubmit}>
-				<FormGroup controlId="formBasicText">
-					<ControlLabel>Caption</ControlLabel>
-					<FormControl type="text" placeholder="Say something about the photo/video" value={this.state.value} onChange={this.updateCaption}/>
-				</FormGroup>
-				<FormGroup controlId="formControlsSelect">
-					<ControlLabel>Category</ControlLabel>
-					<FormControl componentClass="select" placeholder="select">
-						<option value="dance">Dance</option>
-						<option value="other">Other</option>
-					</FormControl>
-				</FormGroup>
-				<FormGroup controlId="formBasicText">
-					<ControlLabel>Location</ControlLabel>
-					<FormControl type="text" placeholder="Where was this taken" value = {this.state.value} onChange={this.updateLocation} />
-				</FormGroup>
-				<FormGroup controlId="formBasicText">
-					<ControlLabel>Hashtags</ControlLabel>
-					<FormControl type="text" placeholder="Add hashtags to reach new audiences" value={this.state.value} onChange={this.updateHashtag}/>
-				</FormGroup>
-				<FormGroup controlId="formBasicText">
-					<ControlLabel>Image/Video URL</ControlLabel>
-					<FormControl type="text" placeholder="Enter video/image url" value={this.state.value} onChange={this.updateURL} />
-				</FormGroup>
-				<Button pullright type="submit">Submit</Button>
-			</form>
-		</div>
+      <Nav />
+      <div>
+        <h1 align="center">Add Experience</h1>
+      </div>
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <FormGroup controlId="formBasicText">
+            <ControlLabel>Caption</ControlLabel>
+            <FormControl type="text" placeholder="Say something about the photo/video" value={this.state.value} onChange={this.updateCaption}/>
+          </FormGroup>
+          <FormGroup controlId="formControlsSelect">
+            <ControlLabel>Category</ControlLabel>
+            <FormControl componentClass="select" placeholder="select">
+              <option value="dance">Dance</option>
+              <option value="other">Other</option>
+            </FormControl>
+          </FormGroup>
+          <FormGroup controlId="formBasicText">
+            <ControlLabel>Location</ControlLabel>
+            <FormControl type="text" placeholder="Where was this taken" value = {this.state.value} onChange={this.updateLocation} />
+          </FormGroup>
+          <FormGroup controlId="formBasicText">
+            <ControlLabel>Hashtags</ControlLabel>
+            <FormControl type="text" placeholder="Add hashtags to reach new audiences" value={this.state.value} onChange={this.updateHashtag}/>
+          </FormGroup>
+          <FormGroup controlId="formBasicText">
+            <ControlLabel>Image/Video URL</ControlLabel>
+            <FormControl type="text" placeholder="Enter video/image url" value={this.state.value} onChange={this.updateURL} />
+          </FormGroup>
+          <Button pullright type="submit">Submit</Button>
+        </form>
+      </div>
     </div>
     )
   }
