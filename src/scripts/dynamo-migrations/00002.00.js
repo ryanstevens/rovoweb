@@ -28,10 +28,12 @@ module.exports = async function() {
     }
     const content = new Content(Object.assign({}, {
       content_uuid: node_uuid.v4()
-    },item, imageOverride));
+    },item, imageOverride, {
+      biz_uuid : biz1.biz_uuid
+    }));
     
     const saver = util.promisify(content.save.bind(content));
-    console.log('Saving ', item);
+    // console.log('Saving ', item);
     console.log(await saver());
     
   }

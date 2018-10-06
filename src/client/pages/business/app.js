@@ -13,15 +13,17 @@ class Container extends React.Component {
 
 	componentDidMount() {
 		axios.get('/business-get/' + window.location.pathname.split('/')[2]).then(results => {
-			this.setState({
-				data: results.data
-			});
+			this.setState(results.data);
 		});
   }
 
   render() {
     
     const { classes } = this.props;
+
+    if (!this.state) {
+      return <div>loading</div>
+    }
 
     return (
     <div>
@@ -53,13 +55,12 @@ class Container extends React.Component {
 			<Grid>
 				<Row>
 					<Col xs={6} md={3}>
-						<img src="http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png" rounded />
+						<img src={this.state.image} rounded />
 					</Col>
 					<Col xs={6} md={3} xsOffset={2}>
-					<Image src="http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png" circle/>
 					</Col>
 				</Row>
-					<h3>test123</h3>
+					<h3>{this.state.name}</h3>
 			</Grid>
 		</div>
 

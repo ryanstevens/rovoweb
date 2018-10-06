@@ -14,8 +14,8 @@ class Container extends React.Component {
 	loadPage() {
 		window.location.href = '/';
 	}
-	loadBusiness() {
-		window.location.href = '/business';
+	loadBusiness(item) {
+		window.location.href = '/business/'+item.biz_uuid;
 	}
 
   
@@ -62,7 +62,7 @@ class Container extends React.Component {
 		</div>
 		<div>
 			<Button bsStyle="primary" onClick={this.loadPage}>Home Page</Button>
-			<Button bsStyle="primary" onClick={this.loadBusiness}>Business Page</Button>
+			<Button bsStyle="primary" onClick={this.loadBusiness.bind(this, this.state.data)}>Business Page</Button>
 		</div>
          <Thumbnail src={this.state.data.fileLocation} alt="placeholder">
 					<h3>Title of picture</h3>
