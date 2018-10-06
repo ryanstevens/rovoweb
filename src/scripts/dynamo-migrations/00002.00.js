@@ -222,7 +222,7 @@ const hashtags = [
 	"#hipop",
 	"#warriors",
 	"#bigbank",
-	"#yg".
+	"#yg",
 	"#hiphop",
 	"#levelup",
 	"#dancechallenge",
@@ -244,7 +244,7 @@ const experiences = youTubes.map(tube => {
   return {
     "title": returnRandomStr(titles),
     "image_id": 1,
-    "hashtags": [returnRandomStr(hashtags), returnRandomStr(hashtags)],
+    "hashtags": [returnRandomStr(hashtags), ' ', returnRandomStr(hashtags)],
     "video_id": tube,
     "fileLocation": `https://img.youtube.com/vi/${tube}/0.jpg`,
     "location": 
