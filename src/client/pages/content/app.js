@@ -15,7 +15,7 @@ class Container extends React.Component {
 		window.location.href = '/';
 	}
 	loadBusiness() {
-		window.open('/business');
+		window.location.href = '/business';
 	}
 
   
