@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './index.css';
 
-import {Navbar, Nav, FormGroup, FormControl, Form, Button} from 'react-bootstrap'
+import {Navbar, Nav, FormGroup, FormControl, Form, Button, Col, Row, Grid, Thumbnail, Image } from 'react-bootstrap'
 
 class Container extends React.Component {
 
@@ -42,6 +42,19 @@ class Container extends React.Component {
 		<div>
 		<Button bsStyle="primary" onClick={this.loadPage}>Home Page</Button>
     	</div>
+		
+		<div>
+			<Grid>
+				<Row>
+					<Col xs={6} md={3}>
+						<img src="http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png" rounded />
+					</Col>
+					<Image src="http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png" rounded />
+					<h3>test123</h3>
+				</Row>
+			</Grid>
+		</div>
+
 	</div>
     )
   }
